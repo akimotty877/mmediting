@@ -52,7 +52,7 @@ def main():
       output = restoration_face_inference(model, args.img_path + f,
                                           args.upscale_factor, args.face_size)
 
-      output = mmcv.imresize(output, (height, width))
+      output = mmcv.imresize(output, (width, height))
       mmcv.imwrite(output, args.save_path + f)
     # if args.imshow:
     #     mmcv.imshow(output, 'predicted restoration result')
