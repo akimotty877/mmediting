@@ -54,6 +54,7 @@ def main():
 
       output = mmcv.imresize(output, (width, height))
       mmcv.imwrite(output, args.save_path + f)
+      print(f)
     # if args.imshow:
     #     mmcv.imshow(output, 'predicted restoration result')
 
