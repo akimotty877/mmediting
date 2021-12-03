@@ -6,6 +6,9 @@ import cv2
 import mmcv
 import torch
 
+import time
+from tqdm import tqdm
+
 from mmedit.apis import init_model, restoration_face_inference
 
 
@@ -48,7 +51,7 @@ def main():
     files_file = [f for f in files if os.path.isfile(os.path.join(args.img_path, f))]
     tmp = cv2.imread(args.img_path + files_file[0])
     height, width, channels = tmp.shape[:3]
-    for f in files_file:
+    for f in tqdm(files_file):
       output = restoration_face_inference(model, args.img_path + f,
                                           args.upscale_factor, args.face_size)
 
