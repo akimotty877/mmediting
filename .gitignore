@@ -65,7 +65,10 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+docs/en/_build/
+docs/en/_tmp/
+docs/zh_cn/_build/
+docs/zh_cn/_tmp/
 
 # PyBuilder
 target/
@@ -127,3 +130,6 @@ mmedit/.mim
 
 # Pytorch Server
 *.mar
+
+# MacOS
+.DS_Store
