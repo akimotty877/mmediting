@@ -46,8 +46,12 @@ def main():
     #                      'you may want to use "restoration_video_demo.py" '
     #                      'for video restoration.')
 
-    model = init_model(
-        args.config, args.checkpoint, device=torch.device('cuda', args.device))
+    if args.device < 0 or not torch.cuda.is_available():
+        device = torch.device('cpu')
+    else:
+        device = torch.device('cuda', args.device)
+
+    model = init_model(args.config, args.checkpoint, device=device)
 
     files = os.listdir(args.img_path)
     files_file = [f for f in files if os.path.isfile(os.path.join(args.img_path, f))]
