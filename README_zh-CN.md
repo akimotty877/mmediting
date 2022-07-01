@@ -35,9 +35,9 @@
 
 </div>
 
-## Introduction
-
 [English](/README.md) | 简体中文
+
+## Introduction
 
 MMEditing 是基于 PyTorch 的图像&视频编辑开源工具箱。是 [OpenMMLab](https://openmmlab.com/) 项目的成员之一。
 
@@ -54,7 +54,6 @@ MMEditing 是基于 PyTorch 的图像&视频编辑开源工具箱。是 [OpenMML
 https://user-images.githubusercontent.com/12756472/158972852-be5849aa-846b-41a8-8687-da5dee968ac7.mp4
 
 https://user-images.githubusercontent.com/12756472/158972813-d8d0f19c-f49c-4618-9967-52652726ef19.mp4
-
 
 ### 主要特性
 
@@ -75,13 +74,17 @@ MMEditing 缜密地设计新的框架并将其精心实现，希望能够为您�
 
 ## 最新消息
 
-- [2022-04-01] v0.14.0 版本发布
+- \[2022-06-01\] v0.15.0 版本发布
+  - 支持 FLAVR
+  - 支持 AOT-GAN
+  - 新版 CAIN，支持 ReduceLROnPlateau 策略
+- \[2022-04-01\] v0.14.0 版本发布
   - 支持视频插帧算法 TOFlow
-- [2022-03-01] v0.13.0 版本发布
+- \[2022-03-01\] v0.13.0 版本发布
   - 支持 CAIN
   - 支持 EDVR-L
   - 支持在 Windows 系统中运行
-- [2022-02-11] 切换到 **PyTorch 1.5+**. 将不再保证与早期版本的 PyTorch 的兼容性
+- \[2022-02-11\] 切换到 **PyTorch 1.5+**. 将不再保证与早期版本的 PyTorch 的兼容性
 
 请查看 [changelog.md](docs/en/changelog.md) 以获取更多细节与发版记录
 
@@ -126,6 +129,7 @@ pip3 install -e .
 - [x] [DeepFillv1](configs/inpainting/deepfillv1/README.md) (CVPR'2018)
 - [x] [PConv](configs/inpainting/partial_conv/README.md) (ECCV'2018)
 - [x] [DeepFillv2](configs/inpainting/deepfillv2/README.md) (CVPR'2019)
+- [x] [AOT-GAN](configs/inpainting/AOT-GAN/README.md) (TVCG'2021)
 
 </details>
 
@@ -179,6 +183,7 @@ pip3 install -e .
 
 - [x] [TOFlow](configs/video_interpolators/tof/README.md) (IJCV'2019)
 - [x] [CAIN](configs/video_interpolators/cain/README.md) (AAAI'2020)
+- [x] [FLAVR](configs/video_interpolators/flavr/README.md) (CVPR'2021)
 
 </details>
 

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="resources/mmediting-logo.png" width="500px"/>
+  <img src="docs/en/_static/image/mmediting-logo.png" width="500px"/>
   <div>&nbsp;</div>
   <div align="center">
     <b><font size="5">OpenMMLab website</font></b>
@@ -35,9 +35,9 @@
 
 </div>
 
-## Introduction
-
 English | [简体中文](/README_zh-CN.md)
+
+## Introduction
 
 MMEditing is an open-source image and video editing toolbox based on PyTorch. It is a part of the [OpenMMLab](https://openmmlab.com/) project.
 
@@ -51,10 +51,9 @@ The master branch works with **PyTorch 1.5+**.
 
 Some Demos:
 
-https://user-images.githubusercontent.com/12756472/158972852-be5849aa-846b-41a8-8687-da5dee968ac7.mp4
+https://user-images.githubusercontent.com/12756472/175944645-cabe8c2b-9f25-440b-91cc-cdac4e752c5a.mp4
 
 https://user-images.githubusercontent.com/12756472/158972813-d8d0f19c-f49c-4618-9967-52652726ef19.mp4
-
 
 ### Major features
 
@@ -76,13 +75,17 @@ hope MMEditing could provide better experience.
 
 ## News
 
-- [2022-04-01] v0.14.0 was released.
+- \[2022-06-01\] v0.15.0 was released.
+  - Support FLAVR
+  - Support AOT-GAN
+  - Support CAIN with ReduceLROnPlateau Scheduler
+- \[2022-04-01\] v0.14.0 was released.
   - Support TOFlow in video frame interpolation
-- [2022-03-01] v0.13.0 was released.
+- \[2022-03-01\] v0.13.0 was released.
   - Support CAIN
   - Support EDVR-L
   - Support running in Windows
-- [2022-02-11] Switch to **PyTorch 1.5+**. The compatibility to earlier versions of PyTorch will no longer be guaranteed.
+- \[2022-02-11\] Switch to **PyTorch 1.5+**. The compatibility to earlier versions of PyTorch will no longer be guaranteed.
 
 Please refer to [changelog.md](docs/en/changelog.md) for details and release history.
 
@@ -97,7 +100,7 @@ Install PyTorch following [official instructions](https://pytorch.org/get-starte
 **Step 2.**
 Install MMCV with [MIM](https://github.com/open-mmlab/mim).
 
-```
+```shell
 pip3 install openmim
 mim install mmcv-full
 ```
@@ -105,13 +108,13 @@ mim install mmcv-full
 **Step 3.**
 Install MMEditing from source.
 
-```
+```shell
 git clone https://github.com/open-mmlab/mmediting.git
 cd mmediting
 pip3 install -e .
 ```
 
-Please refer to [install.md](../../wiki/1.-Installation) for more detailed instruction.
+Please refer to [install.md](docs/en/install.md) for more detailed instruction.
 
 ## Getting Started
 
@@ -128,6 +131,7 @@ Supported algorithms:
 - [x] [DeepFillv1](configs/inpainting/deepfillv1/README.md) (CVPR'2018)
 - [x] [PConv](configs/inpainting/partial_conv/README.md) (ECCV'2018)
 - [x] [DeepFillv2](configs/inpainting/deepfillv2/README.md) (CVPR'2019)
+- [x] [AOT-GAN](configs/inpainting/AOT-GAN/README.md) (TVCG'2021)
 
 </details>
 
@@ -181,6 +185,7 @@ Supported algorithms:
 
 - [x] [TOFlow](configs/video_interpolators/tof/README.md) (IJCV'2019)
 - [x] [CAIN](configs/video_interpolators/cain/README.md) (AAAI'2020)
+- [x] [FLAVR](configs/video_interpolators/flavr/README.md) (CVPR'2021)
 
 </details>
 
@@ -188,7 +193,7 @@ Please refer to [model_zoo](https://mmediting.readthedocs.io/en/latest/_tmp/mode
 
 ## Contributing
 
-We appreciate all contributions to improve MMEditing. Please refer to [CONTRIBUTING.md](https://github.com/open-mmlab/mmdetection/blob/master/.github/CONTRIBUTING.md) in MMCV for the contributing guideline.
+We appreciate all contributions to improve MMEditing. Please refer to our [contributing guidelines](https://github.com/open-mmlab/mmediting/wiki/A.-Contribution-Guidelines).
 
 ## Acknowledgement
 
